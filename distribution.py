@@ -43,11 +43,11 @@ bc=(s.count('b'))
 cc=(s.count('c'))
 
 l=[ac,bc,cc]
-z=list(zip(l,['a',b'b','c']))
+z=list(zip(l,['a','b','c']))
 
 def compare(a, b):
     return a[0]<b[0]
-    a[1]<b[1]
+
 
 
 
