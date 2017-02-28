@@ -46,9 +46,7 @@ l=[ac,bc,cc]
 z=list(zip(l,['a','b','c']))
 
 def compare(a, b):
-    if a[0]>b[0] and a[1]>b[1]:
-        return a>b
-    elif a[0]>b[0] and a[1]<b[1]:
+    if a[0]>b[0]:
         return a>b
     elif a[0]==b[0] and b[1]>a[1]:
         return b>a
