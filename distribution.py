@@ -1,7 +1,7 @@
 """
 distribution.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Jasper
+Credit: Brendan
 
 Assignment:
 
@@ -36,3 +36,32 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
+t=input ("Please enter a string of text (the bigger the better): ")
+s=list(t)
+ac=(s.count('a'))
+bc=(s.count('b'))
+cc=(s.count('c'))
+
+l=[ac,bc,cc]
+z=list(zip(l,['a',b'b','c']))
+
+def compare(a, b):
+    return a[0]<b[0]
+    a[1]<b[1]
+
+
+
+def bsort(seq, cmp):
+    sorted = False
+    while not sorted:
+        sorted = True 
+        for index, value in enumerate(seq): 
+            if index > 0:                  
+                if not cmp(seq[index-1], value):  
+                    sorted = False        
+                    seq[index-1], seq[index] = seq[index], seq[index-1] 
+
+
+bsort(z, compare)
+print(z)
+
