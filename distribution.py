@@ -50,11 +50,7 @@ def compare(a, b):
         return True
     elif a[0]==b[0] and a[1]>b[1]:
         return True
-    elif a[0]==b[0] and b[1]<a[1]:
-        return False
-    elif a[0]<b[0] and a[1]>b[1]:
-        return False
-    else a[0]<b[0] and a[1]<b[1]:
+    else:
         return False
 
 
