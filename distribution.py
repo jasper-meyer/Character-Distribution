@@ -37,6 +37,7 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 t=input ("Please enter a string of text (the bigger the better): ")
+t=t.lower()
 s=list(t)
 ca=(s.count('a'))
 cb=(s.count('b'))
