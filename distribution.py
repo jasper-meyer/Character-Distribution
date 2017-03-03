@@ -96,6 +96,7 @@ bsort(z, compare)
 
 p,q=zip(*z)
 
+print ('The distribution of characters in "{0}" is: ' .format(t))
 print (int(p[0])*(q[0]))
 print (int(p[1])*(q[1]))
 print (int(p[2])*(q[2]))
